@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta name="theme-color" content="#050816">
+    <meta
+        name="description"
+        content="VPN Roblox - Futuristic Roblox generator simulator."
+    >
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>VPN Roblox</title>
+</head>
+
+<body>
+
+    <div class="background-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <header class="topbar">
+        <div class="brand">
+            <img src="titulo.png" alt="VPN Roblox" class="title-logo">
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            ONLINE
+        </div>
+    </header>
+
+    <main class="app">
+
+        <section class="hero">
+
+            <div class="badge">
+                <span>⚡</span>
+                VPN ROBLOX GENERATOR
+            </div>
+
+            <h1>
+                GENERATE
+                <span>ROBLOX</span>
+            </h1>
+
+            <p>
+                Futuristic generator interface designed for mobile
+                and desktop devices.
+            </p>
+
+        </section>
+
+        <section class="generator-card">
+
+            <div class="card-top">
+                <div>
+                    <span class="mini-label">GENERATOR</span>
+                    <h2>Robux Generator</h2>
+                </div>
+
+                <div class="online-counter">
+                    <span class="pulse"></span>
+                    <span id="onlineCount">1,284</span> ONLINE
+                </div>
+            </div>
+
+            <div class="currency-preview">
+
+                <div class="coin-circle">
+                    <img src="logo.png" alt="Robux">
+                </div>
+
+                <div class="amount">
+                    <span id="selectedAmount">10,000</span>
+                    <small>ROBUX</small>
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="username">
+                    ROBLOX USERNAME
+                </label>
+
+                <div class="input-wrapper">
+                    <span class="input-icon">◉</span>
+
+                    <input
+                        id="username"
+                        type="text"
+                        maxlength="20"
+                        autocomplete="off"
+                        placeholder="Enter username"
+                    >
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>
+                    SELECT AMOUNT
+                </label>
+
+                <div class="amount-grid">
+
+                    <button class="amount-btn" data-amount="1,000">
+                        <img src="logo.png" alt="">
+                        1K
+                    </button>
+
+                    <button class="amount-btn active" data-amount="10,000">
+                        <img src="logo.png" alt="">
+                        10K
+                    </button>
+
+                    <button class="amount-btn" data-amount="50,000">
+                        <img src="logo.png" alt="">
+                        50K
+                    </button>
+
+                    <button class="amount-btn" data-amount="100,000">
+                        <img src="logo.png" alt="">
+                        100K
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button id="generateBtn" class="generate-btn">
+
+                <span class="btn-icon">⚡</span>
+
+                <span>GENERATE ROBUX</span>
+
+                <span class="arrow">→</span>
+
+            </button>
+
+            <div class="security">
+                <span>◆</span>
+                SECURE CONNECTION
+                <span class="separator">•</span>
+                NO PASSWORD REQUIRED
+            </div>
+
+        </section>
+
+        <section id="loadingPanel" class="loading-panel hidden">
+
+            <div class="loader-ring"></div>
+
+            <h3 id="loadingTitle">
+                CONNECTING...
+            </h3>
+
+            <p id="loadingText">
+                Establishing secure VPN connection
+            </p>
+
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <div class="progress-info">
+                <span id="progressPercent">0%</span>
+                <span>VPN ROBLOX</span>
+            </div>
+
+        </section>
+
+        <section id="resultPanel" class="result-panel hidden">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <div class="success-badge">
+                GENERATION COMPLETE
+            </div>
+
+            <h2>
+                <span id="resultUsername">Player</span>
+            </h2>
+
+            <div class="result-amount">
+
+                <img src="logo.png" alt="Robux">
+
+                <div>
+                    <strong id="resultAmount">10,000</strong>
+                    <span>ROBUX</span>
+                </div>
+
+            </div>
+
+            <p class="demo-message">
+                This is a visual generator simulation.
+                No Roblox account information was accessed.
+            </p>
+
+            <button id="resetBtn" class="again-btn">
+                GENERATE AGAIN
+            </button>
+
+        </section>
+
+        <section class="features">
+
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <strong>FAST</strong>
+                <span>Optimized generation</span>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">◈</div>
+                <strong>SECURE</strong>
+                <span>No password required</span>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">✦</div>
+                <strong>MODERN</strong>
+                <span>Futuristic interface</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        VPN ROBLOX © 2026
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
