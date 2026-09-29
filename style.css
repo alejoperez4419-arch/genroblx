@@ -776,16 +776,7 @@ input::placeholder {
     letter-spacing: 2px;
 }
 
-.demo-message {
-    max-width: 400px;
-    margin: auto;
 
-    color: #687694;
-
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    line-height: 1.5;
-}
 
 .again-btn {
     margin-top: 20px;
